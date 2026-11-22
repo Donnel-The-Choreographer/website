@@ -734,11 +734,88 @@ img {
 }
 
 /* =========================================
+   INTERACTIVE WHATSAPP BOOKING FORM
+========================================= */
+.booking-section {
+  padding: 5.5rem 0;
+  background: var(--bg-alt);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.booking-wrapper {
+  max-width: 780px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.35rem;
+  margin-bottom: 1.75rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #e4e4ea;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  background: #0d0d10;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  color: var(--text-main);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.94rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.18);
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.submit-booking-btn {
+  font-size: 1rem;
+  padding: 1rem 1.8rem;
+}
+
+/* =========================================
    TESTIMONIALS
 ========================================= */
 .testimonials-section {
   padding: 5.5rem 0;
-  background: var(--bg-alt);
+  background: var(--bg-dark);
 }
 
 .testimonials-grid {
@@ -786,7 +863,7 @@ img {
 ========================================= */
 .faq-section {
   padding: 5.5rem 0;
-  background: var(--bg-dark);
+  background: var(--bg-alt);
 }
 
 .faq-container {
@@ -1047,6 +1124,14 @@ img {
 
   .nav-links.active {
     right: 0;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-wrapper {
+    padding: 1.6rem;
   }
 
   .bottom-flex {

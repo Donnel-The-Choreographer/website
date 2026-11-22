@@ -41,7 +41,7 @@
         <a href="#how-it-works">How It Works</a>
         <a href="#testimonials">Reviews</a>
         <a href="#faq">FAQ</a>
-        <a href="https://wa.me/263781570934?text=Hi%20Donnel%2C%20I%20would%20like%20to%20book%20a%20dance%20session!" target="_blank" rel="noopener" class="btn btn-gold nav-cta">Book Now</a>
+        <a href="#book" class="btn btn-gold nav-cta">Book Now</a>
       </nav>
 
       <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
@@ -59,7 +59,7 @@
       <p class="hero-sub">Professional Wedding Choreography, Dance Classes &amp; Music Video Concepts in Harare, Zimbabwe.</p>
 
       <div class="hero-buttons">
-        <a href="https://wa.me/263781570934?text=Hi%20Donnel%2C%20I%20want%20to%20book%20our%20wedding%20dance!" target="_blank" rel="noopener" class="btn btn-gold">
+        <a href="#book" class="btn btn-gold">
           <i class="fab fa-whatsapp"></i> Book Your Wedding Dance
         </a>
         <a href="#showcase" class="btn btn-outline">
@@ -170,7 +170,7 @@
         <!-- Service A -->
         <div class="service-card popular reveal">
           <div class="popular-ribbon">Our Most Popular</div>
-          <div class="service-icon"><i class="fas fa-rings-wedding"></i><i class="fas fa-heart"></i></div>
+          <div class="service-icon"><i class="fas fa-heart"></i></div>
           <h3>A. Wedding Choreography</h3>
           <p>Your first dance as husband and wife. We create a romantic, elegant routine for you and your partner, matched to your song.</p>
           <div class="service-includes">
@@ -182,7 +182,7 @@
               <li>Surprise Flash Mob</li>
             </ul>
           </div>
-          <a href="https://wa.me/263781570934?text=Hi%20Donnel%2C%20I'd%20like%20to%20enquire%20about%20Wedding%20Choreography!" target="_blank" rel="noopener" class="btn btn-gold btn-full">Enquire Now</a>
+          <a href="#book" data-service="Wedding Choreography" class="btn btn-gold btn-full select-service-btn">Enquire Now</a>
         </div>
 
         <!-- Service B -->
@@ -199,7 +199,7 @@
               <li>Kids Classes</li>
             </ul>
           </div>
-          <a href="https://wa.me/263781570934?text=Hi%20Donnel%2C%20I'm%20interested%20in%20joining%20Dance%20Classes!" target="_blank" rel="noopener" class="btn btn-outline btn-full">Join A Class</a>
+          <a href="#book" data-service="Dance Classes" class="btn btn-outline btn-full select-service-btn">Join A Class</a>
         </div>
 
         <!-- Service C -->
@@ -210,7 +210,7 @@
           <div class="pricing-tag">
             <i class="fas fa-tag"></i> Price on quotation — Depends on song &amp; concept
           </div>
-          <a href="https://wa.me/263781570934?text=Hi%20Donnel%2C%20I%20need%20a%20quote%20for%20Music%20Video%20Choreography!" target="_blank" rel="noopener" class="btn btn-outline btn-full">Request Quote</a>
+          <a href="#book" data-service="Music Video Choreography" class="btn btn-outline btn-full select-service-btn">Request Quote</a>
         </div>
 
         <!-- Service D -->
@@ -228,7 +228,7 @@
               <li>School Proms</li>
             </ul>
           </div>
-          <a href="https://wa.me/263781570934?text=Hi%20Donnel%2C%20I'd%20like%20to%20book%20choreography%20for%20an%20event!" target="_blank" rel="noopener" class="btn btn-outline btn-full">Book An Event</a>
+          <a href="#book" data-service="Dance Concepts & Events" class="btn btn-outline btn-full select-service-btn">Book An Event</a>
         </div>
       </div>
     </div>
@@ -316,7 +316,7 @@
         <div class="step-card reveal">
           <div class="step-number">01</div>
           <h3>Book</h3>
-          <p>WhatsApp <a href="https://wa.me/263777020054" target="_blank" rel="noopener" class="text-gold">077 702 0054</a>, tell us your wedding date and song.</p>
+          <p>WhatsApp <a href="https://wa.me/263777020054" target="_blank" rel="noopener" class="text-gold">077 702 0054</a> or use our quick booking form below with your date and song.</p>
         </div>
 
         <div class="step-card reveal">
@@ -336,6 +336,102 @@
           <h3>Perform</h3>
           <p>You shine on your big day, and your guests go crazy!</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE WHATSAPP BOOKING FORM -->
+  <section id="book" class="booking-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Instant Booking</span>
+        <h2>Plan Your Dance Session</h2>
+        <p>Fill in your details below and launch a pre-filled WhatsApp message straight to Donnel.</p>
+      </div>
+
+      <div class="booking-wrapper reveal">
+        <form id="whatsapp-booking-form" class="booking-form">
+          <div class="form-grid">
+            <!-- Name -->
+            <div class="form-group">
+              <label for="client-name"><i class="fas fa-user text-gold"></i> Your Name(s) *</label>
+              <input type="text" id="client-name" placeholder="e.g. Tendai & Rudo" required />
+            </div>
+
+            <!-- Service Selection -->
+            <div class="form-group">
+              <label for="service-type"><i class="fas fa-list-check text-gold"></i> Service Needed *</label>
+              <select id="service-type" required>
+                <option value="Wedding Choreography">Wedding Choreography (First Dance / Bridal Party)</option>
+                <option value="Dance Classes">Dance Classes (Beginners / Couples / Group / Kids)</option>
+                <option value="Music Video Choreography">Music Video Choreography</option>
+                <option value="Dance Concepts & Events">Dance Concepts &amp; Events (Lobola, Birthday, Corporate, Prom)</option>
+              </select>
+            </div>
+
+            <!-- Event / Target Date -->
+            <div class="form-group">
+              <label for="event-date"><i class="fas fa-calendar-alt text-gold"></i> Wedding / Event Date *</label>
+              <input type="date" id="event-date" required />
+            </div>
+
+            <!-- Rehearsal Preference -->
+            <div class="form-group">
+              <label for="rehearsal-location"><i class="fas fa-map-pin text-gold"></i> Preferred Rehearsal Option</label>
+              <select id="rehearsal-location">
+                <option value="In Harare (Studio / Venue)">In Harare</option>
+                <option value="At Our Home">At Our Home</option>
+                <option value="Online via Video Call">Online via Video Call</option>
+                <option value="Outside Harare (Transport Arranged)">Outside Harare (Transport Arranged)</option>
+              </select>
+            </div>
+
+            <!-- Song Choice with Autocomplete Suggestions -->
+            <div class="form-group full-width">
+              <label for="song-choice"><i class="fas fa-music text-gold"></i> Song Title, Artist, or Link (Optional)</label>
+              <input
+                type="text"
+                id="song-choice"
+                list="popular-songs"
+                placeholder="Type your song name, paste a YouTube/Spotify link, or pick a suggestion..."
+              />
+              <datalist id="popular-songs">
+                <option value="Jah Prayzah - Goto"></option>
+                <option value="Jah Prayzah - Sadza Nemuriwo"></option>
+                <option value="Winky D - MuGarden ft. Gemma Griffiths"></option>
+                <option value="Takura - Zino Irema"></option>
+                <option value="Tamy Moyo - Kwandinobva"></option>
+                <option value="Nox - My Melody"></option>
+                <option value="Ed Sheeran - Perfect"></option>
+                <option value="John Legend - All of Me"></option>
+                <option value="Banky W - Made for You"></option>
+                <option value="Davido - Assurance"></option>
+                <option value="Sinach - Way Maker"></option>
+                <option value="Benjamin Dube - Yiwo Lawa Amandla"></option>
+                <option value="Not decided yet — need Donnel's recommendation"></option>
+              </datalist>
+            </div>
+
+            <!-- Preferred WhatsApp Line -->
+            <div class="form-group full-width">
+              <label for="whatsapp-line"><i class="fab fa-whatsapp text-gold"></i> Send Booking To</label>
+              <select id="whatsapp-line">
+                <option value="263781570934">Main Booking Line (+263 781 570 934)</option>
+                <option value="263777020054">Wedding Desk (077 702 0054)</option>
+              </select>
+            </div>
+
+            <!-- Extra Notes -->
+            <div class="form-group full-width">
+              <label for="extra-notes"><i class="fas fa-comment-dots text-gold"></i> Tell Us About Your Vision (Optional)</label>
+              <textarea id="extra-notes" rows="3" placeholder="e.g. We have never danced before, number of people in bridal party, or special surprise ideas..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-full submit-booking-btn">
+            <i class="fab fa-whatsapp"></i> Send Booking Details via WhatsApp
+          </button>
+        </form>
       </div>
     </div>
   </section>
@@ -479,6 +575,7 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#showcase">Watch Our Dances</a></li>
           <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#book">Book Now</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
